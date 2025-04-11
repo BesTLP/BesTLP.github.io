@@ -9,7 +9,6 @@
 - 在此基础上，构建以曲率变化率为核心的能量函数，并引入罚函数法对控制点进行迭代优化，旨在最小化整体曲率波动。
 - 在每一节点向量处施加曲率变化率左右导数连续性的约束条件，以增强曲线在局部与整体上的光滑连续性。
 
-
 ![弧长参数化](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/CurveFair/2.png?raw=true)
 
 <h4 style="color:#ff8c00;">基于引导线的Gordon曲面构造 (2024.09 - 2024.12)</h4>
