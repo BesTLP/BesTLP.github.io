@@ -1,16 +1,24 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![BesTLP](https://img.shields.io/badge/BesTLP-github-blue?logo=github)](https://github.com/BesTLP)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+硕士研究生 | 计算机科学与技术 | 西安交通大学电子与信息学部  
+#### 联系方式  
+📧 Email: [forriver1108@163.com](mailto:forriver1108@163.com)  
+📬 QQ: 281885807@qq.com
 
-#### Email
-sli[at]cumt.edu.cn
+#### 教育背景  
+🎓 **硕士**：西安交通大学（985/211/双一流）  计算机科学与技术  2024-2027（在读）  
+🎓 **本科**：电子科技大学（985/211/双一流）  软件工程			2020-2024
 
-#### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+#### 研究方向(几何引擎核心算法)
+- B样条曲线光顺，2025.
+- Gordon曲面构造，2024.
 
-#### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+#### 技术专长  
+💻 **C++几何算法开发**，熟悉OCCT开源几何库  
+
+#### 兴趣爱好
+🎮 **三维建模与动画、数字艺术**
+
 

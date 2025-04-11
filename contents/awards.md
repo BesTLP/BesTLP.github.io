@@ -1,13 +1,17 @@
-- National Scholarship of Graduate Student, 2024.
+**西安交通大学 2024**  
+- 获得 "新生奖学金"、"学业奖学金" 
 
-- First-prize Scholarship of CUMT, 2024.
+**电子科技大学 2024**  
+- 获得 "校级优秀毕业生"、"四川省省级优秀毕业生" 称号（免答辩） 
 
-- First-prize Scholarship of CUMT, 2023.
+**电子科技大学 2021 - 2023**
+- 获得"国家励志奖学金"、"优秀学生奖学金" 
 
-- Freshman Scholarship of CUMT, 2022.
+**电子科技大学 2022**  
+- 莲花欣企业助学金 同年级共6人获奖 
 
-- Excellent Graduation Project of Jiangsu Province, 2022.
+**中国大学生计算机设计大赛 2022**  
+- 动漫与短片专业组 省级二等奖、国家三等奖 
 
-- First-prize Enterprise Scholarship of CUMT, 2020.
-
-- First-prize Scholarship of CUMT, 2019.
+**卧谈荟征文比赛 2021**  
+- 获得三等奖 
