@@ -12,6 +12,7 @@
 - 基于 <strong>Azure TTS</strong> 实现文本对话转语音，增强动画沉浸感与互动性。  
 - 利用 <strong>Blender</strong> 与 <strong>Unreal Engine</strong> 完成场景建模，使用 <strong>Mixamo</strong> 进行骨骼绑定与动画映射，最终通过 <strong>Cycles 渲染器</strong> 输出高质量动画序列。  
 - 完成 4 分钟宣传动画，荣获 <strong>中国大学生计算机设计大赛国家级三等奖</strong>。
+![Animation](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/Animation.png?raw=true)
 
 ---
 
