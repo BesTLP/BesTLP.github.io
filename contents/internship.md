@@ -12,7 +12,7 @@
 
 - 在每一节点向量处施加曲率变化率左右导数连续性的约束条件，以增强曲线在局部与整体上的光滑连续性。
 
-![弧长参数化](../static/assets/ima/CurveFair/2.png)
+![弧长参数化](bestlp.github.io/static/assets/img/CurveFair/2.png)
 
 <h4 style="color:#ff8c00;">基于引导线的Gordon曲面构造 (2024.09 - 2024.12)</h4>
 
