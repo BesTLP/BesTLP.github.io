@@ -3,7 +3,7 @@
 - 设计并实现了基于 <strong>参数域划分</strong> 的离散曲线曲面求交算法，通过将曲线和曲面离散为线段与三角面片，实现交点与交线的高效计算。  
 - 采用 <strong>R 树空间索引结构</strong> 优化大规模三角面片的求交过程，在面片数量剧增时算法性能显著提升。  
 - 基于 <strong>Qt 框架</strong> 与 <strong>OCCT 几何内核</strong>，开发离散求交算法系统，集成可视化功能，支持求交过程的交互展示与分析。
-
+![Intersect](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Intersect/Intersect_1.png?raw=true)
 ---
 
 <span style="color:#d35400; font-size:1.2em;"><strong>汉语言文化宣传动画 - 中国大学生计算机设计大赛</strong></span>
