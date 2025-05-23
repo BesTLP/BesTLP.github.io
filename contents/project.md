@@ -1,33 +1,109 @@
-<span style="color:#007acc; font-size:1.2em;"><strong>基于离散曲线曲面求交的几何引擎算法实现 - 毕业设计</strong></span>
+# 项目展示
 
-- 设计并实现了基于 <strong>参数域划分</strong> 的离散曲线曲面求交算法，通过将曲线和曲面离散为线段与三角面片，实现交点与交线的高效计算。  
-- 采用 <strong>R 树空间索引结构</strong> 优化大规模三角面片的求交过程，在面片数量剧增时算法性能显著提升。  
-- 基于 <strong>Qt 框架</strong> 与 <strong>OCCT 几何内核</strong>，开发离散求交算法系统，集成可视化功能，支持求交过程的交互展示与分析。
-![Intersect](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Intersect/Intersect_1.png?raw=true)
+## 汉语言文化宣传动画 - 中国大学生计算机设计大赛
+
+- 使用 **PureRef** 收集动画概念参考素材，并编写详细的动画设计文档。  
+- 基于 **Azure TTS** 实现文本对话转语音，增强动画沉浸感与互动性。  
+- 利用 **Blender** 与 **Unreal Engine** 完成场景建模，使用 **Mixamo** 进行骨骼绑定与动画映射，最终通过 **Cycles 渲染器** 输出高质量动画序列。  
+- 完成 4 分钟宣传动画，荣获 **中国大学生计算机设计大赛国家级三等奖**。
+
+<div class="project-grid">
+    <div class="project-card" onclick="showImagePreview(this)">
+        <img src="https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/Animation.png?raw=true" alt="Animation">
+    </div>
+</div>
+
 ---
 
-<span style="color:#d35400; font-size:1.2em;"><strong>汉语言文化宣传动画 - 中国大学生计算机设计大赛</strong></span>
+## 数字文物的三维制作与渲染 - 四川省博物院
 
-- 使用 <strong>PureRef</strong> 收集动画概念参考素材，并编写详细的动画设计文档。  
-- 基于 <strong>Azure TTS</strong> 实现文本对话转语音，增强动画沉浸感与互动性。  
-- 利用 <strong>Blender</strong> 与 <strong>Unreal Engine</strong> 完成场景建模，使用 <strong>Mixamo</strong> 进行骨骼绑定与动画映射，最终通过 <strong>Cycles 渲染器</strong> 输出高质量动画序列。  
-- 完成 4 分钟宣传动画，荣获 <strong>中国大学生计算机设计大赛国家级三等奖</strong>。
-![Animation](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/Animation.png?raw=true)
+- 在博物院现场使用多角度高清摄影采集文物图像，借助 **MetaShape** 完成三维重建与高保真模型生成。  
+- 使用 **Blender** 对模型进行重拓扑，结合 **Substance Painter** 进行高精度材质制作与贴图处理。  
+- 基于 **Cycles 渲染器** 输出写实效果，最终通过 **Three.js** 嵌入至展示平台，实现可交互的三维数字展示。
 
 ---
 
-<span style="color:#16a085; font-size:1.2em;"><strong>数字文物的三维制作与渲染 - 四川省博物院</strong></span>
+## 个人三维建模渲染项目
 
-- 在博物院现场使用多角度高清摄影采集文物图像，借助 <strong>MetaShape</strong> 完成三维重建与高保真模型生成。  
-- 使用 <strong>Blender</strong> 对模型进行重拓扑，结合 <strong>Substance Painter</strong> 进行高精度材质制作与贴图处理。  
-- 基于 <strong>Cycles 渲染器</strong> 输出写实效果，最终通过 <strong>Three.js</strong> 嵌入至展示平台，实现可交互的三维数字展示。
+<div id="personal-render" class="project-grid">
+    <div class="project-card" onclick="showImagePreview(this)">
+        <img src="https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/1.jpg?raw=true" alt="Render 1">
+    </div>
+    <div class="project-card" onclick="showImagePreview(this)">
+        <img src="https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/2.jpg?raw=true" alt="Render 2">
+    </div>
+    <div class="project-card" onclick="showImagePreview(this)">
+        <img src="https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/3.jpg?raw=true" alt="Render 3">
+    </div>
+    <div class="project-card" onclick="showImagePreview(this)">
+        <img src="https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/4.jpg?raw=true" alt="Render 4">
+    </div>
+    <div class="project-card" onclick="showImagePreview(this)">
+        <img src="https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/5.jpg?raw=true" alt="Render 5">
+    </div>
+    <div class="project-card" onclick="showImagePreview(this)">
+        <img src="https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/6.jpg?raw=true" alt="Render 6">
+    </div>
+</div>
 
+<!-- 图片预览模态框 -->
+<div id="imagePreviewModal" class="image-preview-modal" onclick="closeImagePreview(event)">
+    <span class="close-btn" onclick="closeImagePreview(event)">&times;</span>
+    <img id="previewImage" src="" alt="Preview">
+</div>
 
-<span style="color:#16a085; font-size:1.2em;"><strong>个人三维建模渲染项目</strong></span>
-![Render1](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/1.jpg?raw=true)
-![Render2](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/2.jpg?raw=true)
-![Render3](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/3.jpg?raw=true)
-![Render4](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/4.jpg?raw=true)
-![Render5](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/5.jpg?raw=true)
-![Render6](https://github.com/BesTLP/bestlp.github.io/blob/main/static/assets/img/Render/6.jpg?raw=true)
+<script>
+function showImagePreview(element) {
+    const modal = document.getElementById('imagePreviewModal');
+    const previewImg = document.getElementById('previewImage');
+    const img = element.querySelector('img');
+    
+    // 获取原始图片URL
+    let originalUrl = img.src;
+    // 移除 ?raw=true 参数
+    originalUrl = originalUrl.replace(/\?raw=true$/, '');
+    // 确保使用原始图片URL
+    originalUrl = originalUrl.replace('/blob/', '/raw/');
+    
+    // 设置预览图片
+    previewImg.src = originalUrl;
+    
+    // 显示模态框
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    
+    // 添加过渡动画
+    setTimeout(() => {
+        modal.classList.add('active');
+    }, 10);
+}
+
+function closeImagePreview(event) {
+    // 防止事件冒泡
+    if (event) {
+        event.stopPropagation();
+    }
+    
+    const modal = document.getElementById('imagePreviewModal');
+    modal.classList.remove('active');
+    
+    // 等待过渡动画完成后再隐藏模态框
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 300);
+}
+
+// 按ESC键关闭预览
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeImagePreview();
+    }
+});
+
+// 阻止图片拖拽
+document.querySelectorAll('.project-card img').forEach(img => {
+    img.addEventListener('dragstart', (e) => e.preventDefault());
+});
+</script>
 

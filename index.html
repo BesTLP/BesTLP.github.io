@@ -61,8 +61,6 @@
                 useLabelIds: true,         // use label name rather than tag for ids
                 maxMacros: 10000,          // maximum number of macro substitutions per expression
                 maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
                 formatError:               // function called when TeX syntax errors occur
                     (jax, err) => jax.formatError(err)
             }
@@ -108,7 +106,7 @@
     </nav>
 
     <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+    <section class="top-section fade-in" style="background-image: url('static/assets/img/background.jpeg');">
         <div class="top-section-content">
             <div class="container px-5">
                 <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
@@ -119,14 +117,14 @@
 
     <!-- Photo -->
     <div class="container px-5">
-        <div id="avatar">
+        <div id="avatar" class="fade-in">
             <img class="shadow" src="static/assets/img/photo.png">
         </div>
     </div>
     <!-- Photo -->
 
     <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5 reveal" id="home">
         <div class="container px-5">
             <header>
                 <h2 id="home-subtitle"> </h2>
@@ -138,7 +136,7 @@
     <!-- Home -->
 
     <!-- Internship -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="internship">
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5 reveal" id="internship">
         <div class="container px-5">
             <header>
                 <h2 id="internship-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;INTERNSHIP</h2>
@@ -150,7 +148,7 @@
     <!-- Internship  -->
 
     <!-- Project -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="project">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5 reveal" id="project">
         <div class="container px-5">
             <header>
                 <h2 id="project-subtitle"><i class="bi bi-award-fill"></i>PROJECT</h2>
@@ -161,7 +159,7 @@
     <!-- Project -->
 
     <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5 reveal" id="awards">
         <div class="container px-5">
             <header>
                 <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS</h2>
@@ -183,6 +181,28 @@
             </div>
         </div>
     </footer>
+
+    <!-- 添加滚动显示动画的脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            function reveal() {
+                reveals.forEach(element => {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < windowHeight - elementVisible) {
+                        element.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', reveal);
+            reveal(); // 初始检查
+        });
+    </script>
 
 </body>
 
