@@ -172,13 +172,17 @@ section .main-body {
 
 /* Gordon曲面构造项目的特殊布局 */
 #gordon-surface {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 1.5rem !important;
     margin: 1rem 0 !important;
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 #gordon-surface .project-card {
+    width: 100% !important;
     aspect-ratio: 16/9 !important;
 }
 
@@ -397,7 +401,7 @@ footer a:hover {
     }
     
     #gordon-surface {
-        grid-template-columns: 1fr !important;
+        max-width: 100% !important;
     }
 }
 

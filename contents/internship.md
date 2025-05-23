@@ -49,8 +49,6 @@
     </div>
 </div>
 
----
-
 <div class="project-description">
 
 ### 基于离散曲线曲面的求交算法实现        
