@@ -12,11 +12,11 @@
         --bs-body-color: #e0e0e0;
         --h-title-color: #6b7cff;
     }
-    
+
     .bg-gradient-primary-to-secondary-light {
         background: linear-gradient(45deg, #2a2a2a, #1a1a1a) !important;
     }
-    
+
     .bg-gradient-primary-to-secondary-gray {
         background: linear-gradient(45deg, #2d2d2d, #252525) !important;
     }
@@ -78,7 +78,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
 }
 
 /* 头像样式 */
@@ -100,7 +100,7 @@
 #avatar img {
     height: max(120px, min(180px, calc(100vw/6)));
     border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: all var(--transition-speed) ease;
 }
 
@@ -152,13 +152,13 @@ section .main-body {
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
@@ -242,12 +242,12 @@ footer a:hover {
     #avatar {
         margin: 0;
     }
-    
+
     section header h2 {
         font-size: 1.8rem;
         line-height: 3rem;
     }
-    
+
     .top-section {
         height: 25rem;
         padding: 8rem 0;
@@ -260,6 +260,7 @@ footer a:hover {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -291,7 +292,7 @@ footer a:hover {
     :root {
         --h-title-color: #0000ff;
     }
-    
+
     .text-gradient {
         background: none;
         color: var(--h-title-color);
@@ -399,7 +400,7 @@ footer a:hover {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     #gordon-surface {
         max-width: 100% !important;
     }
@@ -417,7 +418,7 @@ footer a:hover {
     border-radius: 12px;
     padding: 1.5rem;
     margin: 1rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border-left: 4px solid var(--h-title-color);
 }
 
@@ -447,9 +448,9 @@ footer a:hover {
 @media (prefers-color-scheme: dark) {
     .project-description {
         background: #2a2a2a;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
-    
+
     .project-description li {
         color: #e0e0e0;
     }
@@ -534,12 +535,12 @@ header h2 {
     #avatar {
         margin-top: -50px;
     }
-    
+
     #avatar img {
         width: 150px;
         height: 150px;
     }
-    
+
     header h2 {
         font-size: 1.5rem;
     }
@@ -657,17 +658,17 @@ header h2 {
     .project-item {
         flex-direction: column;
     }
-    
+
     .project-image {
         max-width: 100%;
         min-width: 0;
         min-height: 0;
     }
-    
+
     .project-image img {
         max-height: 300px;
     }
-    
+
     .project-content {
         padding: 1.5rem;
     }
@@ -679,13 +680,14 @@ header h2 {
     align-items: flex-start;
     background: rgba(30, 30, 30, 0.85);
     border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
     padding: 36px 32px 32px 32px;
     max-width: 1100px;
     margin: 40px auto 0 auto;
     backdrop-filter: blur(8px);
     gap: 48px;
 }
+
 .profile-left {
     display: flex;
     flex-direction: column;
@@ -693,6 +695,7 @@ header h2 {
     min-width: 160px;
     max-width: 180px;
 }
+
 .profile-photo {
     width: 150px;
     height: 190px;
@@ -701,9 +704,11 @@ header h2 {
     border: 2px solid #222;
     margin-bottom: 16px;
 }
+
 .profile-github {
     margin-top: 0;
 }
+
 .profile-info {
     flex: 1 1 0%;
     min-width: 0;
@@ -712,11 +717,13 @@ header h2 {
     line-height: 1.7;
     text-align: left;
 }
+
 #home-md {
     font-size: 1.08em;
     line-height: 1.7;
     text-align: left;
 }
+
 @media (max-width: 900px) {
     .profile-card {
         flex-direction: column;
@@ -725,22 +732,26 @@ header h2 {
         padding: 18px 8px 12px 8px;
         margin: 24px auto 0 auto;
     }
+
     .profile-left {
         flex-direction: row;
         justify-content: center;
         min-width: 0;
         max-width: none;
     }
+
     .profile-photo {
         margin-bottom: 0;
         margin-right: 12px;
         width: 100px;
         height: 130px;
     }
+
     .profile-github {
         margin-top: 0;
         align-self: flex-end;
     }
+
     .profile-info {
         width: 100%;
         font-size: 1em;
@@ -754,11 +765,13 @@ header h2 {
     gap: 48px;
     margin: 48px 0 0 0;
 }
+
 .profile-classic-photo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .profile-classic-photo img {
     width: 260px;
     height: 320px;
@@ -767,6 +780,7 @@ header h2 {
     border: 2px solid #222;
     background: #fff;
 }
+
 .profile-classic-info {
     flex: 1 1 0%;
     min-width: 0;
@@ -778,16 +792,19 @@ header h2 {
     flex-direction: column;
     justify-content: center;
 }
+
 @media (max-width: 900px) {
     .profile-classic {
         flex-direction: column;
         align-items: center;
         gap: 24px;
     }
+
     .profile-classic-photo img {
         width: 180px;
         height: 220px;
     }
+
     .profile-classic-info {
         font-size: 1em;
     }
@@ -807,6 +824,7 @@ header h2 {
     margin: 48px 0 0 0;
     justify-content: flex-start;
 }
+
 .profile-no-card-info {
     min-width: 0;
     color: #fff;
@@ -829,16 +847,20 @@ header h2 {
         align-items: center;
         gap: 24px;
     }
+
     .profile-classic-photo img {
         width: 180px;
         height: 220px;
     }
+
     .profile-no-card-info {
         font-size: 1em;
     }
 }
 
-.profile-no-card-info, .main-body, .main-body * {
+.profile-no-card-info,
+.main-body,
+.main-body * {
     text-align: left !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -852,6 +874,7 @@ header h2 {
     margin-top: 12px;
     gap: 6px;
 }
+
 .profile-name-under-photo {
     color: #fff;
     font-size: 1.35em;
@@ -867,15 +890,17 @@ header h2 {
     gap: 32px;
     margin-top: 24px;
 }
+
 .activity-item {
     display: flex;
     background: rgba(30, 30, 30, 0.85);
     border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
     padding: 32px 32px 24px 32px;
     gap: 32px;
     align-items: flex-start;
 }
+
 .activity-image {
     flex: 0 0 220px;
     max-width: 320px;
@@ -888,47 +913,56 @@ header h2 {
     overflow: hidden;
     min-height: 120px;
 }
+
 .activity-image img {
     width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 8px;
 }
+
 .activity-content {
     flex: 1 1 0%;
     min-width: 0;
     color: #fff;
 }
+
 .activity-title {
     font-size: 1.25em;
     font-weight: bold;
     margin-bottom: 8px;
     color: #b0c4de;
 }
+
 .activity-description {
     margin-bottom: 12px;
     color: #e0e0e0;
 }
+
 .activity-details h4 {
     color: #fff;
     font-size: 1.08em;
     margin-bottom: 6px;
 }
+
 .activity-details ul {
     list-style-type: disc;
     padding-left: 1.5em;
     margin: 0;
 }
+
 .activity-details li {
     color: #e0e0e0;
     margin-bottom: 4px;
 }
+
 @media (max-width: 900px) {
     .activity-item {
         flex-direction: column;
         gap: 16px;
         padding: 18px 8px 12px 8px;
     }
+
     .activity-image {
         max-width: 100%;
         min-width: 0;
@@ -938,41 +972,71 @@ header h2 {
 
 .project-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.2rem;
     margin: 1.5rem 0 1rem 0;
     width: 100%;
 }
+
 .project-gallery img {
     width: 100%;
     height: 220px;
     object-fit: contain;
     border-radius: 8px;
     background: #f8f9fa;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s;
 }
+
 .project-gallery img:hover {
     transform: scale(1.04);
 }
+
 @media (max-width: 900px) {
     .project-gallery {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .project-gallery img {
-        height: 140px;
+        grid-template-rows: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 600px) {
     .project-gallery {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .project-gallery img {
-        height: 100px;
+        grid-template-rows: repeat(4, 1fr);
     }
 }
 
+/* 图片放大弹窗样式 */
+#img-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
 
+#img-modal.active {
+    display: flex;
+}
+
+#img-modal-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 20px #fff;
+    border-radius: 8px;
+}
+
+img.enlargeable {
+    cursor: zoom-in;
+    transition: box-shadow 0.2s;
+}
+
+img.enlargeable:hover {
+    box-shadow: 0 0 10px #aaa;
+}

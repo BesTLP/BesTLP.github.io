@@ -33,7 +33,7 @@
 
     <!-- For Compatability -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
+
     <!-- Markdown -->
     <script type="text/javascript" src="static/js/marked.min.js"></script>
 
@@ -66,9 +66,11 @@
             }
         };
     </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
+    <script type="text/javascript" id="MathJax-script"
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <!-- Core JS-->
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
@@ -81,7 +83,7 @@
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU
                 <i class="bi-list"></i>
             </button>
@@ -97,7 +99,7 @@
                         <a class="nav-link me-lg-3" href="#projects">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#interests">INTERESTS</a>
+                        <a class="nav-link me-lg-3" href="#activities">ACTIVITIES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
@@ -132,18 +134,21 @@
                 <!-- 项目1 -->
                 <div class="project-item">
                     <div class="project-image">
-                        <img src="static/assets/img/CurveFair/2.png"alt="Project 1">
+                        <img src="static/assets/img/CurveFair/2.png" alt="Project 1" class="enlargeable">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">基于能量泛函的曲线光顺算法</h3>
-                        <p class="project-description">在CAD/CAM、船舶建模和几何建模中，对初始曲线进行平滑处理，以提高曲面质量与可制造性。基于工业应用需求，提出了一种基于能量最小化的B样条曲线光顺方法。</p>
+                        <p class="project-description">
+                            在CAD/CAM、船舶建模和几何建模中，对初始曲线进行平滑处理，以提高曲面质量与可制造性。基于工业应用需求，提出了一种基于能量最小化的B样条曲线光顺方法。</p>
                         <div class="project-achievements">
                             <h4>核心技术与模块</h4>
                             <ul>
                                 <li><strong>弧长参数映射，</strong>通过重参数化方式使导数具备曲率与曲率变化率的几何意义，同时保持原始曲线形状不变</li>
-                                <li><strong>能量泛函构建，</strong>以曲率变化率<code>（弧长参数化曲线其三阶导数即为曲率</code>为优化目标，建立光顺能量模型衡量曲线平滑程度</li>
-                                <li><strong>约束系统集成，</strong>引入边界条件与连续性约束，保障拼接过渡处的几何一致性<code>（G1）</code></li>
-                                <li><strong>线性系统求解，</strong>将优化问题转化为稀疏线性方程组，求解控制点实现高效光顺</li>
+                                <li><strong>能量泛函构建，</strong>以曲率变化率<code>（弧长参数化曲线其三阶导数即为曲率</code>为优化目标，建立光顺能量模型衡量曲线平滑程度
+                                </li>
+                                <li><strong>约束系统集成，</strong>引入边界条件与连续性约束，保障拼接过渡处的几何一致性<code>（G1）</code>
+                            </ul>
+                            <li><strong>线性系统求解，</strong>将优化问题转化为稀疏线性方程组，求解控制点实现高效光顺</li>
                             </ul>
                         </div>
                     </div>
@@ -152,12 +157,14 @@
                 <!-- 项目2 -->
                 <div class="project-item">
                     <div class="project-image">
-                        <img src="static/assets/img/Gordon/3.png" alt="Project 2">
+                        <img src="static/assets/img/Gordon/3.png" alt="Project 2" class="enlargeable">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">基于引导线的船壳曲面构造算法</h3>
                         </h3>
-                        <p class="project-description">面向大尺度、复杂边界的船壳建模需求，设计并实现了一套基于引导线与Gordon理论的高质量曲面构造算法。该方法有效解决工程中曲面拼接不连续、边界不光顺等问题，已成功应用于船壳曲面设计。</p>
+                        <p class="project-description">
+                            面向大尺度、复杂边界的船壳建模需求，设计并实现了一套基于引导线与Gordon理论的高质量曲面构造算法。该方法有效解决工程中曲面拼接不连续、边界不光顺等问题，已成功应用于船壳曲面设计。
+                        </p>
                         <div class="project-achievements">
                             <h4>核心技术与模块</h4>
                             <ul>
@@ -171,19 +178,22 @@
                 <!-- 项目3 -->
                 <div class="project-item">
                     <div class="project-image">
-                        <img src="static/assets/img/Intersect/Intersect_1.png" alt="Project 2">
+                        <img src="static/assets/img/Intersect/Intersect_1.png" alt="Project 2" class="enlargeable">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">基于离散曲线曲面的求交算法</h3>
                         </h3>
-                        <p class="project-description">针对复杂几何造型中的曲线与曲面、以及曲面间的求交问题，设计并实现了一套通用的参数域离散化求交算法框架。该方法适用于高复杂度场景，兼顾计算效率与求交精度，已集成于几何处理模块中。</p>
+                        <p class="project-description">
+                            针对复杂几何造型中的曲线与曲面、以及曲面间的求交问题，设计并实现了一套通用的参数域离散化求交算法框架。该方法适用于高复杂度场景，兼顾计算效率与求交精度，已集成于几何处理模块中。</p>
                         <div class="project-achievements">
                             <h4>核心技术与模块</h4>
                             <ul>
                                 <li><strong>离散化策略，</strong>采用参数域划分将曲线和曲面分别转化为线段与三角面片集合</li>
                                 <li><strong>空间加速结构，</strong>引入 <code>R 树</code> 索引结构，提升大规模面片集合间的交点检索效率</li>
-                                <li><strong>可视化交互，</strong>基于 <code>Qt</code> 与 <code>OCCT</code> 开发动态调试界面，支持全过程交互可视</li>
-                                <li><strong>算法测试体系，</strong>结合 <code>PostgreSQL</code> 与 <code>Google Test</code> 构建自动化数据管理与单元测试框架</li>
+                                <li><strong>可视化交互，</strong>基于 <code>Qt</code> 与 <code>OCCT</code> 开发动态调试界面，支持全过程交互可视
+                                </li>
+                                <li><strong>算法测试体系，</strong>结合 <code>PostgreSQL</code> 与 <code>Google Test</code>
+                                    构建自动化数据管理与单元测试框架</li>
                             </ul>
                         </div>
                     </div>
@@ -201,12 +211,12 @@
             <div class="project-container">
                 <div class="project-item">
                     <div class="project-image">
-                        <img src="static/assets/img/OpenGL/1.png" alt="OpenGL Project">
+                        <img src="static/assets/img/OpenGL/1.png" alt="OpenGL Project" class="enlargeable">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">OpenGL渲染引擎</h3>
+                        <h3 class="project-title">OpenGL渲染引擎构建实战</h3>
                         <p class="project-description">
-                            项目从零搭建OpenGL实时渲染框架，支持模型导入、纹理贴图、光照计算、材质系统与后处理效果，涵盖完整渲染管线开发流程，采用现代C++封装架构，逐步实现核心功能。
+                            项目从零搭建OpenGL实时渲染框架，支持模型导入、纹理贴图、光照计算、材质系统与后处理效果，涵盖完整渲染管线开发流程。项目面向引擎底层学习者与图形学研究者，采用现代C++封装架构，逐步实现核心功能。
                         </p>
                         <div class="project-achievements">
                             <h4>核心技术与模块</h4>
@@ -232,12 +242,24 @@
     <section class="bg-gradient-primary-to-secondary-light mt5 md5 reveal" id="activities">
         <div class="container px-5">
             <header>
-                <h2 id="activities-subtitle"><i class="bi bi-calendar-event"></i>&nbsp;Interests</h2>
+                <h2 id="activities-subtitle"><i class="bi bi-calendar-event"></i>&nbsp;Personal Interests</h2>
             </header>
             <div class="project-container">
                 <div class="project-item">
+                    <div class="project-content">
+                        <h3 class="project-title">室内概念设计</h3>
+                        <div class="project-details"></div>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="static/assets/img/House/House1.jpg" alt="Render 1" class="enlargeable">
+                        <img src="static/assets/img/House/House2.jpg" alt="Render 2" class="enlargeable">
+                        <img src="static/assets/img/House/House3.jpg" alt="Render 3" class="enlargeable">
+                        <img src="static/assets/img/House/House4.jpg" alt="Render 4" class="enlargeable">
+                    </div>
+                </div>
+                <div class="project-item">
                     <div class="project-image">
-                         <img src="static/assets/img/Render/Animation.png" alt="Activity 1">
+                        <img src="static/assets/img/Render/Animation.png" alt="Activity 1" class="enlargeable">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">中国汉语言宣传动画</h3>
@@ -252,12 +274,12 @@
                         <div class="project-details"></div>
                     </div>
                     <div class="project-gallery">
-                        <img src="static/assets/img/Render/1.jpg" alt="Render 1">
-                        <img src="static/assets/img/Render/2.jpg" alt="Render 2">
-                        <img src="static/assets/img/Render/3.jpg" alt="Render 3">
-                        <img src="static/assets/img/Render/4.jpg" alt="Render 4">
-                        <img src="static/assets/img/Render/5.jpg" alt="Render 5">
-                        <img src="static/assets/img/Render/6.jpg" alt="Render 6">
+                        <img src="static/assets/img/Render/1.jpg" alt="Render 1" class="enlargeable">
+                        <img src="static/assets/img/Render/2.jpg" alt="Render 2" class="enlargeable">
+                        <img src="static/assets/img/Render/3.jpg" alt="Render 3" class="enlargeable">
+                        <img src="static/assets/img/Render/4.jpg" alt="Render 4" class="enlargeable">
+                        <img src="static/assets/img/Render/5.jpg" alt="Render 5" class="enlargeable">
+                        <img src="static/assets/img/Render/6.jpg" alt="Render 6" class="enlargeable">
                     </div>
                 </div>
             </div>
@@ -288,25 +310,52 @@
 
     <!-- 添加滚动显示动画的脚本 -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const reveals = document.querySelectorAll('.reveal');
-            
+
             function reveal() {
                 reveals.forEach(element => {
                     const windowHeight = window.innerHeight;
                     const elementTop = element.getBoundingClientRect().top;
                     const elementVisible = 150;
-                    
+
                     if (elementTop < windowHeight - elementVisible) {
                         element.classList.add('active');
                     }
                 });
             }
-            
+
             window.addEventListener('scroll', reveal);
             reveal(); // 初始检查
         });
     </script>
 
+    <!-- 图片放大弹窗 -->
+    <div id="img-modal"
+        style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);justify-content:center;align-items:center;">
+        <img id="img-modal-img" src=""
+            style="max-width:90vw;max-height:90vh;box-shadow:0 0 20px #fff;border-radius:8px;" />
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = document.getElementById('img-modal');
+            const modalImg = document.getElementById('img-modal-img');
+            document.querySelectorAll('img.enlargeable').forEach(img => {
+                img.style.cursor = 'zoom-in';
+                img.addEventListener('click', function () {
+                    modalImg.src = this.src;
+                    modal.style.display = 'flex';
+                });
+            });
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    modalImg.src = '';
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>
