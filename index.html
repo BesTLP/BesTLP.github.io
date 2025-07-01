@@ -216,53 +216,54 @@
                     <div class="project-content">
                         <h3 class="project-title">OpenGL渲染引擎</h3>
                         <p class="project-description">
-                            项目从零搭建OpenGL实时渲染框架，支持模型导入、纹理贴图、光照计算、材质系统与后处理效果，涵盖完整渲染管线开发流程。
+                            本系统基于 OpenGL 实现，覆盖图形渲染管线，资源管理、可编程着色器、材质与纹理控制、图像后处理和摄像机交互等功能模块
                         </p>
                         <div class="project-achievements">
                             <h4>核心技术与模块</h4>
                             <ul>
-                                <li><strong>日志系统，</strong>基于 <code>spdlog</code> 实现全局日志输出，覆盖渲染流程、资源加载等关键步骤</li>
-                                <li><strong>图像加载，</strong>使用 <code>stb_image</code> 加载纹理资源，支持RGBA与多格式图像贴图</li>
-                                <li><strong>模型解析，</strong>集成 <code>Assimp</code> 支持OBJ等格式模型导入，读取网格、法线、UV及多材质信息</li>
-                                <li><strong>材质系统，</strong>实现漫反射、镜面高光、法线贴图等效果，支持多纹理绑定与自定义 Shader 属性</li>
-                                <li><strong>渲染管线，</strong>封装<code>Shader</code>类，统一管理着色器加载、编译、链接与Uniform变量更新</li>
-                                <li><strong>帧缓冲机制，</strong>构建 <code>FBO</code> 支持屏幕纹理输出与后处理管线，为实现模糊、高光、屏幕空间特效奠定基础</li>
-                                <li><strong>摄像机控制，</strong>实现完整摄像机类，支持位置/视角控制及View/Projection矩阵计算</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="static/assets/img/Renderer/backpack.png" alt="CPU Soft Rasterizer"
-                            class="enlargeable">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">CPU软光栅渲染器</h3>
-                        <p class="project-description">
-                            独立设计并开发了一套完整的CPU软光栅渲染器，从底层实现图形渲染管线，模拟现代GPU架构，涵盖模型加载、着色系统、高级纹理处理及交互式摄像机控制。该项目加深了对图形学核心原理的理解，并锻炼了系统级架构设计与优化能力。
-                        </p>
-                        <div class="project-achievements">
-                            <h4>核心技术与实现</h4>
-                            <ul>
-                                <li><strong>GPU架构模拟：</strong>设计并实现类OpenGL的缓冲对象系统<code>（VAO/VBO/EBO）</code>及其属性绑定机制，支持灵活的顶点数据定义。
+                                <li><strong>日志系统集成：</strong>基于 <code>spdlog</code> 构建高效日志系统，实现全局日志输出，显著提升开发调试与运行时诊断效率
                                 </li>
-                                <li><strong>图形渲染管线：</strong>完整实现<code>可编程渲染管线</code>，包括<code>MVP变换</code>、<code>Sutherland-Hodgman裁剪</code>、<code>背面剔除</code>、<code>三角形重心插值光栅化</code>、<code>透视修正插值</code>、<code>Z-Buffer深度测试及颜色混合</code>。
+                                <li><strong>渲染流程搭建：</strong>实现现代OpenGL渲染管线，包括顶点输入、几何处理、光照计算、光栅化、片元着色与屏幕输出</li>
+                                <li><strong>资源加载与解析：</strong>使用 <code>stb_image</code> 支持多格式图像与 RGBA 数据导入，集成
+                                    <code>Assimp</code> 实现对 OBJ 等主流 3D 格式的支持
                                 </li>
-                                <li><strong>可编程着色器：</strong>实现可扩展着色器系统，支持顶点位置<code>MVP变换</code>、<code>法线逆转置矩阵处理</code>、基于<code>UV的纹理采样</code>与<code>Lambert光照模型</code>。
-                                </li>
-                                <li><strong>模型与场景管理：</strong>集成<code>Assimp</code>库，实现<code>.obj/.fbx</code>等主流3D模型格式加载；构建场景图层级结构与局部变换系统，支持嵌入式及外部纹理的加载与缓存管理。
-                                </li>
-                                <li><strong>交互式摄像机：</strong>开发支持自由视角、六自由度（6DoF）</code>移动操作的摄像机系统，动态生成透视投影矩阵和LookAt观察矩阵。
-                                </li>
-                                <li><strong>高级纹理处理：</strong>基于<code></code>STBI_IMAGE</code>库实现图像加载，支持<code>近邻过滤和双线性过滤采样</code>，以及重复、镜像和钳制等多种纹理包裹模式。
+                                <li><strong>高级材质系统：</strong>支持漫反射、镜面高光、法线贴图等常见 BRDF 效果，构建统一材质数据结构与纹理绑定机制</li>
+                                <li><strong>着色器系统：</strong>设计 <code>Shader</code> 类，封装着色器的加载、编译、链接、错误检查与 Uniform 参数管理，简化
+                                    GLSL 编程流程</li>
+                                <li><strong>帧缓冲与后处理管线：</strong>构建帧缓冲对象，实现离屏渲染与屏幕纹理输出，可以实现高斯模糊、泛光等图像等后处理效果</li>
+                                <li><strong>交互式摄像机系统：</strong>实现自由视角摄像机控制，支持鼠标和键盘联动操作。自动生成 View 与 Projection 矩阵，实现交互式探索
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    </ul>
                 </div>
             </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-image">
+                <img src="static/assets/img/Renderer/backpack.png" alt="CPU Soft Rasterizer" class="enlargeable">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">CPU软光栅渲染器</h3>
+                <p class="project-description">
+                    设计并开发了一套完整的CPU软光栅渲染器，从底层实现图形渲染管线，模拟现代GPU架构，涵盖模型加载、着色系统、高级纹理处理及交互式摄像机控制。该项目加深了对图形学核心原理的理解，并锻炼了系统级架构设计与优化能力。
+                </p>
+                <div class="project-achievements">
+                    <h4>核心技术与实现</h4>
+                    <ul>
+                        <li><strong>GPU架构模拟：</strong>设计并实现类OpenGL的缓冲对象系统（VAO/VBO/EBO）及其属性绑定机制，支持灵活的顶点数据定义</li>
+                        <li><strong>图形渲染管线：</strong>完整实现可编程渲染管线，包括MVP变换、Sutherland-Hodgman多边形裁剪、背面剔除、三角形重心插值光栅化、透视修正插值、Z-Buffer深度测试及颜色混合
+                        </li>
+                        <li><strong>纹理系统：</strong>基于 stbi_image 库实现图像加载，支持近邻过滤和双线性过滤采样，以及重复、镜像和钳制等多种纹理包裹模式</li>
+                        <li><strong>着色器系统：</strong>实现可扩展着色器系统，支持顶点位置MVP变换、法线逆转置矩阵处理、基于UV的纹理采样与Lambert光照模型</li>
+                        <li><strong>模型与场景管理：</strong>利用 Assimp 库构建场景图层级结构与局部变换系统，支持嵌入式及外部纹理的加载与缓存，实现主流3D模型的加载</li>
+                        <li><strong>交互式摄像机：</strong>开发支持自由视角、六自由度移动操作的摄像机系统，动态生成透视投影矩阵和 LookAt 观察矩阵</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </section>
 
