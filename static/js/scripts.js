@@ -1,5 +1,3 @@
-
-
 const content_dir = 'contents/'
 const config_file = 'config.yml'
 const section_names = ['home', 'internship', 'project','awards']
@@ -61,5 +59,13 @@ window.addEventListener('DOMContentLoaded', event => {
             })
             .catch(error => console.log(error));
     })
+
+    document.querySelectorAll('.project-gallery').forEach(gallery => {
+        if (gallery.querySelectorAll('img').length === 4) {
+            gallery.classList.add('gallery-4');
+        } else {
+            gallery.classList.remove('gallery-4');
+        }
+    });
 
 }); 
